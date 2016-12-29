@@ -1,0 +1,163 @@
+.skin-small img {
+    max-width: 80px;
+    max-height: 60px;
+}
+
+.user {
+    color: firebrick;
+}
+
+.skin-small {
+    width: 19%;
+    text-align: center;
+    display: inline-block;
+}
+
+.skinsContainer {
+    padding: 20px;
+    border-bottom: 1px dotted;
+    border-top: 1px dotted;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.winnerInfo {
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+    position: absolute;
+    top:36%;
+    left:45px;
+}
+
+.timer {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top:30%;
+}
+
+.skinCircle {
+    position: relative;
+    animation: rotation 6s infinite;
+    animation-timing-function: linear;
+    transform-origin: 300px 300px;
+}
+
+.skinCircle .skin-small {
+    position: absolute;
+    animation: rotation-elems 6s infinite;
+    animation-timing-function: linear;
+}
+
+.container600{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: oldlace;
+    border-radius: 50%;
+    border: 1px dotted;
+    position: relative;
+}
+
+.smallCircle{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 50%;
+    top: 124px;
+    left: 124px;
+    border: 3px double;
+}
+
+.skin--one {
+    top: 0px;
+    left: 245px;
+}
+
+.skin--two {
+    top: 510px;
+    left: 245px;
+}
+
+.skin--three {
+    top: 255px;
+    left: 486px;
+}
+
+.skin--four {
+    top: 255px;
+    left: 0px;
+}
+
+.skin--five {
+    top: 200px;
+    left: 310px;
+}
+
+.skin--six {
+    top: 200px;
+    left: 310px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    13% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37% {
+        transform: rotate(135deg);
+    }
+    49% {
+        transform: rotate(180deg);
+    }
+    62% {
+        transform: rotate(225deg);
+    }
+    74% {
+        transform: rotate(270deg);
+    }
+    85% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation-elems {
+    0% {
+        transform: rotate(0deg);
+    }
+    13% {
+        transform: rotate(-45deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    37% {
+        transform: rotate(-135deg);
+    }
+    49% {
+        transform: rotate(-180deg);
+    }
+    62% {
+        transform: rotate(-225deg);
+    }
+    74% {
+        transform: rotate(-270deg);
+    }
+    85% {
+        transform: rotate(-315deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,14 @@
+<div class="bet">
+    <input type="number"
+           [(ngModel)]="betAmount"
+           class="form-control"
+           placeholder="500">
+
+    <button (click)="bet(betAmount)"
+            *ngIf="!blockBetting"
+            class="btn btn-primary form-control">bet</button>
+
+    <button (click)="stop()"
+            *ngIf="blockBetting"
+            class="btn btn-danger form-control">Stop</button>
+</div>
