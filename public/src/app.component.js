@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import template from './app.html';
+import './app.scss';
 
 export class AppComponent {
 

@@ -9,7 +9,7 @@ export class BetComponent {
     }
 
     bet(amount) {
-        if (amount > 0 && !this.blockBetting) {
+        if (amount > 0 && !this.blockBetting && amount <= this.pointsSvc.obj.points) {
             this.pointsSvc.obj.points -= amount;
             this.pointsSvc.obj.pointsInGame += amount;
         }

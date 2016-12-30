@@ -1,7 +1,12 @@
-<div class="multiplierValue" *ngIf="!timeout">
+<div class="multiplierValue" *ngIf="!timeout" [style.font-size]="(20*multiplier)+'px'">
     x{{multiplier}}
 </div>
 
 <div class="timeout" *ngIf="timeout">
     {{timeout}}
 </div>
+
+<img src="http://pngimg.com/upload/rockets_PNG13284.png"
+     class="rocket"
+     [style.top]="40 + (70*(multiplier-1))+'px'"
+     [style.left]="40 + (70*(multiplier-1))+'px'">

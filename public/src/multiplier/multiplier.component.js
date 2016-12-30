@@ -26,7 +26,7 @@ export class MultiplierComponent {
 
     runMultiplayer(){
         this.crashTime = this.getRandomCrashTime();
-        this.intervalID = setInterval(this.increaseMultiplier.bind(this), 200);
+        this.intervalID = setInterval(this.increaseMultiplier.bind(this), 100);
 
     }
 
@@ -51,7 +51,7 @@ export class MultiplierComponent {
     }
 
     getRandomCrashTime(){
-        const randomCrashTime = (Math.random() + 1).toFixed(2);
+        const randomCrashTime = (Math.random() * 9 + 1).toFixed(2);
         console.log(randomCrashTime);
         return randomCrashTime;
     }

@@ -5,7 +5,8 @@
   "main": "wallaby.js",
   "scripts": {
     "postinstall": "node ./node_modules/.bin/webpack",
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "watch": "./node_modules/.bin/webpack -w"
   },
   "author": "",
   "license": "ISC",
