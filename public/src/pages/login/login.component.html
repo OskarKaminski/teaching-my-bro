@@ -1,7 +1,22 @@
-<div class="app">
-    <multiplier (currentMultiplier)="currentMultiplier($event)"></multiplier>
-    <div class="container">
-        <bet [multiplier]="multiplier" [blockBetting]="blockBetting"></bet>
+<div class="login-container">
+    <div class="login-box">
+        <h1 class="text-center login-title">Logowanie</h1>
+        <div class="form-group">
+            Email
+            <input type="email"
+                   [(ngModel)]="email"
+                   placeholder="jan.kowalski@gmail.com"
+                   class="form-control">
+        </div>
+
+        <div class="form-group">
+            Haslo
+            <input type="password"
+                   [(ngModel)]="haslo"
+                   class="form-control">
+        </div>
+        <button (click)="login()"
+                class="btn btn-primary form-control">zaloguj</button>
+
     </div>
-    <player></player>
 </div>

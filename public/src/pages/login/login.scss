@@ -1,19 +1,18 @@
-.multiplierValue{
-  font-size: 20px;
-  text-align: center;
-  color: blueviolet;
+.login-box{
+  width: 33%;
+  background-color: white;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  padding: 20px;
+  border-radius: 30px;
 }
 
-.timeout{
-  font-size: 30px;
-  text-align: center;
-  color: blueviolet;
+.login-container{
+  position: relative;
 }
 
-.rocket{
-  width: 200px;
-  position: absolute;
-  transform: rotate(78deg);
-  top:20px;
-  left:41%;
+.login-title{
+  font-weight: 100;
 }
